@@ -11,6 +11,7 @@ class AccountDetails extends Component {
                 Please select a account...
              </div>;
     }
+    
     return (
       <div className="col-md-6">
         <div className="card">

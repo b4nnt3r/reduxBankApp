@@ -14,10 +14,7 @@ import UserList from "./containers/UserList";
 import UserDetail from "./containers/UserDetail";
 import AccountDetails from "./containers/AccountDetails";
 
-//create store for redux and apply middleware
 const createStoreWithMiddleware = applyMiddleware()(createStore);
-
-//wrap provider around router
 ReactDOM.render(
   <Provider
     store={createStoreWithMiddleware(
