@@ -24,8 +24,7 @@ ReactDOM.render(
       reducers,
       window.__REDUX_DEVTOOLS_EXTENSION__ &&
         window.__REDUX_DEVTOOLS_EXTENSION__()
-    )}
-  >
+    )}>
     <BrowserRouter>
       <Baselayout>
         <Switch>

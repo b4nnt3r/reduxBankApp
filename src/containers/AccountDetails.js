@@ -7,9 +7,10 @@ import Transactions from "./Transactions";
 class AccountDetails extends Component {
   render() {
     if (!this.props.account) {
-      return <div>Please select a account...</div>;
+      return <div>
+                Please select a account...
+             </div>;
     }
-
     return (
       <div className="col-md-6">
         <div className="card">

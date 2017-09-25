@@ -8,6 +8,7 @@ export function selectUser(userId) {
     payload: userId
   };
 }
+
 export function selectAccount(accountId) {
   return {
     type: ACCOUNT_SELECTED,

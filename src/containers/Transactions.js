@@ -10,10 +10,8 @@ class Transactions extends React.Component {
     this.state = {
       modal: false
     };
-
     this.toggle = this.toggle.bind(this);
   }
-
   toggle() {
     this.setState({
       modal: !this.state.modal
@@ -29,8 +27,7 @@ class Transactions extends React.Component {
         <Modal
           isOpen={this.state.modal}
           toggle={this.toggle}
-          className={this.props.className}
-        >
+          className={this.props.className}>
           <ModalHeader toggle={this.toggle}>Make a withdrawal</ModalHeader>
           <ModalBody>
             Pick an amount you&apos;d like to withdraw from your account. Current
@@ -42,8 +39,7 @@ class Transactions extends React.Component {
               onClick={e => {
                 this.toggle();
                 return this.props.withdrawFunds(5);
-              }}
-            >
+              }}>
               $5
             </Button>
             <Button
@@ -51,8 +47,7 @@ class Transactions extends React.Component {
               onClick={e => {
                 this.toggle();
                 return this.props.withdrawFunds(10);
-              }}
-            >
+              }}>
               $10
             </Button>
             <Button
@@ -60,8 +55,7 @@ class Transactions extends React.Component {
               onClick={e => {
                 this.toggle();
                 return this.props.withdrawFunds(20);
-              }}
-            >
+              }}>
               $20
             </Button>
             <Button color="danger" onClick={this.toggle}>
