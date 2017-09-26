@@ -19,8 +19,7 @@ class UserDetail extends Component {
         <div key={account.id}>
           <Link
             onClick={() => this.props.selectAccount(account)}
-            to={`/users/${id}/${account.id}`}
-          >
+            to={`/users/${id}/${account.id}`}>
             {account.accountType}
           </Link>
         </div>
