@@ -9,12 +9,9 @@ class UserDetail extends Component {
     if (!this.props.user) {
       return <div>Please select a user...</div>;
     }
-    //get user id from params of URL
     const { id } = this.props.match.params;
-    //map over the accounts for the user to create links to them.
     let accounts = this.props.user.accounts.map(account => {
-      //creating a Link with the account type for
-      //each account.
+    
       return (
         <div key={account.id}>
           <Link
